@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>INICIO</title>
+
+	<!-- esta fuente se copia de las fuentes de google y despues se tcopia la fuente que se desea usar en el css styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+	<link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+   
+    <!--se debe agregar este link a cada hoja a alcual queremos que tenga el estilo que aplicamos -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+   	    
+</head>
+<body>
+
+
+	<header>
+		
+				<h1 class="titulo"> 
+		  <div> <img src="images/palcort.png">PALCORT TECH</div>
+						  
+				
+	    <!-- Es el primer titulo, la etiqueta span se unsa para dar caracteristicas especiales aun area determinada como en el ejemplo -->
+    </header>
+	<div class="nav-bg" >
+		<nav class="navegacion-principal contenedor">
+			<!-- class son para definir el tipo de clases que se van a utilizar en el navegador como colores margenes y lo que mas se dese para que el proyecto se vea bien, y se separan por espacios -->
+			<!-- Son los enlaces los div se usan para separar un bloque del otro -->
+
+			<a href="index.html">Inicio</a>
+			<a href="Nosotros.html">Nosotros</a>
+			<a href="Clientes.html">Clientes</a>
+			<a href="Contacto.html">Contacto</a>
+		</nav>
+	</div>
+
+	<!--<img src="images/hero.jpg" alt="banner"> -->
+	<section class="hero">
+		<div class="contenido-hero">
+			<img class="test test4" src="images/hero1.jpg">
+             <img class="test test4">
+             <img class="codeimg test test3" src="images/adm.jpg">
+             <img class="codeimg test test2" src="images/simuV.jpg">
+             <img class="codeimg test test1" src="images/sistVis.jpg">
+
+			<!-- Titulo numero 2-->
+			<h2 class="encima1">Simuladores De Vuelo</h2>  
+				
+			<p class="encima2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FDFEFE " fill="none" stroke-linecap="round" stroke-linejoin="round">
+				  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				  <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+				  <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+				</svg>
+				Bogota D.C. - Colombia
+			</p >
+				<a href="#contacto" class="boton , encima2" >Contactar</a>
+		</div>
+	</section>	
+	
+	<main class="contenedor sombra">
+		
+			<h2 class="titulo">Algunas de Nuestras Soluciones</h2>
+				<div class="servicios">
+					<div class="servicio">
+			
+				
+						<h3>Simuladores de Vuelo</h3>
+						<div class="iconos">	 	
+							<svg >
+								<img src="images/simuV.jpg" class="iconos">
+							</svg>
+						</div>
+							<p>Diseñamos y fabricamos todo tipo de sistemas de movimiento, simuladores y dispositivos de entrenamiento: básicos, intermedios y avanzados; incluyendo sistemas visuales convencionales y de realidad virtual.</p>	
+					</div>
+			
+				<div class="servicio">
+						<h3>ADM (Sistemas de Monitoreo de vuelo)</h3>
+						<div class="iconos">
+							<svg >
+								<img src="images/adm.jpg" class="iconos">
+							</svg>
+						</div>			
+							<p>ADM es un sistema portable y fácil de instalar para grabar datos, video y audio en vuelo. Su función principal es la de alimentar el software de análisis de eventos, correspondiente al programa FOQA (Flight Operations Quality Assurance).</p>	
+				</div>
+			
+				<div class="servicio">
+					<h3>Sistemas Visuales</h3>
+						<div class="iconos">	
+							<svg >
+								<img src="images/sistVis.jpg" class="iconos">
+							</svg>
+						</div>		
+							<p>Contamos con diferentes configuraciones de sistemas visuales que se ajustan a las necesidades de nuestros clientes, siendo las más destacadas las visuales cilíndricas, esféricas y colimadas, con cobertura de más de 220 grados en el eje horizontal y hasta 110 grados en el eje vertical.</p>
+				</div>
+			
+			</div>
+
+		<h2>Contacto</h2>
+
+			<!-- el diseño con CSS es en cascada y tien su propia sintaxis se agrupa atravez de llaves - jemplo p { color: red; }  -->
+
+			<!-- campos del formulario el metodo GET envia una url, El metodo post envia datos mas seguros -->
+
+		<form class="formulario" name="contacto" id="contacto" action="index.html" method="POST">
+
+			<fieldset>
+
+				<legend>Contacteme Diligenciando todos los campos</legend>
+				
+
+			<div class="contenedor-campos"><!-- el div sirve para agrupar y ordenar el formulario -->
+					
+				<div class="campo">
+					<label>Nombre Completo</label>
+					<input class="input-tex" type ="text" name="nombre" id="Nombre" placeholder="Tu Nombre">
+				</div>
+				
+					<!-- <label>Chekbox</label>
+					<input type ="Chekbox" name="check"  id="check"> 
+
+					<label>Radio</label>
+					<input type ="radio" name="radio"  id="radio"> -->
+				<div class="campo">
+					<label>Celular</label>
+					<input class="input-tex" type ="tel" name="celular" id="celular" placeholder="Tu Celular">
+				</div>
+ 
+				<div class="campo">	
+					<label>Correo</label>
+					<input class="input-tex" type ="email" name="correo" id="correo" placeholder="Tu Correo">
+			    </div>
+
+				<div class="campo">
+					<label>Mensaje</label>
+					<textarea class="input-tex" name="mensaje" id="mensaje" placeholder="Escribe tu Mensaje"></textarea> 
+				</div>
+			</div> <!--cierra cpntenedor campos-->
+				 	
+					<!-- caja para comentarios-->
+				<div>
+					<input class="boton enviar" type ="submit" name="enviar" id="enviar" value="Contactar">
+				</div>
+					
+			</fieldset>	
+		</form>
+	</main>
+
+	<footer class="footer">
+        <p class="footer__texto">Jorge Sarria - Todos los derechos Reservados 2024.</p>
+    </footer>
+	
+</body>
+</html>
+
+
