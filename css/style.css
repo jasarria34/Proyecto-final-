@@ -78,6 +78,7 @@ span {
     height: 50px;
     font-size: 2.6rem;
     padding: 4rem;
+	
 
 }
 p{
@@ -170,6 +171,27 @@ p{
 	font-weight: bold;
 
 	border: none;
+}
+
+.enviar {
+	width: 100%;
+
+}
+
+.error {
+	background-color: rgb(185,0,0);
+	text-align: center;
+	color: var(--blanco);
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+.correcto {
+	background-color: rgb(74,185,0);
+	text-align: center;
+	color: var(--blanco);
+	text-transform: uppercase;
+	padding: 1rem;
 }
 /* sirve para que aparezca el puntero encima del boton */	
 .boton:hover{
