@@ -206,6 +206,7 @@ p{
 	color:rgb(5, 80, 202); 
 	text-align: center;
 	text-transform: uppercase;
+	text-decoration: none;
 	
 /* se aplica la variable con var(-- XXX) */		
 }
