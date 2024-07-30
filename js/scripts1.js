@@ -26,7 +26,7 @@ function mostrarResultado(data) {
     // Aquí puedes personalizar cómo quieres mostrar los datos
     resultadoDiv.innerHTML = 
     `<div class="sombra">
-    tr<h1>Capital: ${data[0].capital}</h1>
+    <h1>Capital: ${data[0].capital}</h1>
     <h2>Pais: ${data[0].name.common}</h2>
     <h2>Region: ${data[0].region}</h2>
     <h2>Sub Region: ${data[0].subregion}</h2>
