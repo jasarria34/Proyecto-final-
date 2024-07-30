@@ -25,11 +25,13 @@ function mostrarResultado(data) {
     const resultadoDiv = document.getElementById('resultado');
     // Aquí puedes personalizar cómo quieres mostrar los datos
     resultadoDiv.innerHTML = 
-    `<h1>Capital: ${data[0].capital}</h1>
+    `<div class="sombra">
+    tr<h1>Capital: ${data[0].capital}</h1>
+    <h2>Pais: ${data[0].name.common}</h2>
     <h2>Region: ${data[0].region}</h2>
     <h2>Sub Region: ${data[0].subregion}</h2>
     <h2>${data[0].timezones}</h2>
-    <div>
+    
     <img class="img-bandera" src="${data[0].flags.png}" alt="Bandera">
     </div>
     `;
